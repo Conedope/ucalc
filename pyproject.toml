@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ucalc"
+version = "1.0.0"
+description = "A units-of-measurement calculator: arithmetic with dimensional checking and unit conversion"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Conedope"}]
+keywords = ["units", "calculator", "dimensions", "si"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering",
+]
+
+[project.scripts]
+ucalc = "ucalc.cli:main"
+
+[tool.setuptools]
+packages = ["ucalc"]
